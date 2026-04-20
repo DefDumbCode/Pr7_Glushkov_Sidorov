@@ -21,7 +21,11 @@ namespace Pr7_Glushkov_Sidorov
             }
             Console.ReadKey();
         }
-
+        /// <summary>
+        /// Выводит строку на экран со счётчиком
+        /// </summary>
+        /// <param name="name">Строка с именем</param>
+        /// <param name="msg">Счётчик символов в имени</param>
         static void SendMessage(string name, int msg)
         {
             Console.WriteLine("Hello, " + name + "! Count to " + msg);
