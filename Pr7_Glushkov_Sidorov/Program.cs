@@ -21,7 +21,7 @@ namespace Pr7_Glushkov_Sidorov
             int n2 = 1;
             int sum;
 
-            for (int i = 2; i < n; i++)
+            for (int i = 2; i <= n; i++)
             {
                 sum = n1 + n2;
                 n1 = n2;
