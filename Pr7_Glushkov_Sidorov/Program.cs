@@ -13,7 +13,11 @@ namespace Pr7_Glushkov_Sidorov
             int result = Fibonacci(5);
             Console.WriteLine(result);
         }
-
+        /// <summary>
+        /// Вычисляет число Фибоначчи по индексу в последовательности
+        /// </summary>
+        /// <param name="n">Индекс в последовательности</param>
+        /// <returns>Число Фибоначчи по его индексу</returns>
         static int Fibonacci(int n)
         {
             Console.WriteLine("The output is: ");
