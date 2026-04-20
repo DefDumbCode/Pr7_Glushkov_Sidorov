@@ -11,7 +11,9 @@ namespace Pr7_Glushkov_Sidorov
             IterateThroughList();
             Console.ReadKey();
         }
-
+        /// <summary>
+        /// Создаёт и отображет названия галактики, расстояния до галактики и типы галактики все в списке
+        /// </summary>
         private static void IterateThroughList()
         {
             var theGalaxies = new List<Galaxy>
