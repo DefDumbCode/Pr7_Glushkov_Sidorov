@@ -9,7 +9,6 @@ namespace UnitTest
         [TestMethod]
         public void Encrypt()
         {
-            
         }
     }
 }
