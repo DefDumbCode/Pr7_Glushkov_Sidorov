@@ -3,13 +3,19 @@ using System;
 
 namespace UnitTest
 {
-    [TestClass]
-    public class UnitTest1
+    public class ValidationModule
     {
         [TestMethod]
-        public void Encrypt()
+        public void VaidatePositive()
         {
+            string text = "Текст, подходящий для шифровки";
+            string diam = "4";
 
+            bool isValid = ScitalaCipher.Validate(text, diam);
+
+            Assert.IsTrue(isValid);
         }
     }
+
+
 }
