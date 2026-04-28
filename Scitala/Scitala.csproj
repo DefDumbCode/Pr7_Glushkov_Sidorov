@@ -86,7 +86,6 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <None Include="Assets\ДРИ ДНЯ ТОЖДЯ ПР7.2.docx" />
     <None Include="Assets\ТДД ПР7.2 %284%29.docx" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

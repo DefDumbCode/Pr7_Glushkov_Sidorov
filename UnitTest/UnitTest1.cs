@@ -8,8 +8,8 @@ namespace UnitTest
         [TestMethod]
         public void VaidatePositive()
         {
-            string text = "Текст, подходящий для шифровки";
-            string diam = "4";
+            string text = "Тестовый текст для шифровальной шифровки";
+            string diam = "3";
 
             bool isValid = ScitalaCipher.Validate(text, diam);
 
@@ -22,8 +22,8 @@ namespace UnitTest
             string text;
             string diam;
 
-            text = "Текст";
-            diam = "5";
+            text = "Текстовый текст";
+            diam = "15";
 
             bool isValid = ScitalaCipher.Validate(text, diam);
 
@@ -45,24 +45,24 @@ namespace UnitTest
             Assert.IsFalse(isValid);
 
 
-            text = "Текст, походящий для шифровки";
-            diam = "6,3";
+            text = "Текстовый текст";
+            diam = "24";
 
             isValid = ScitalaCipher.Validate(text, diam);
 
             Assert.IsFalse(isValid);
 
 
-            text = "Текст, походящий для шифровки";
-            diam = "Строка вместо диаметра";
+            text = "Текстовый текст";
+            diam = "3,8";
 
             isValid = ScitalaCipher.Validate(text, diam);
 
             Assert.IsFalse(isValid);
 
 
-            text = "Текст";
-            diam = "8";
+            text = "Текстовый текст";
+            diam = "-9";
 
             isValid = ScitalaCipher.Validate(text, diam);
 
@@ -76,8 +76,8 @@ namespace UnitTest
         [TestMethod]
         public void EncryptDecrypt()
         {
-            string orig = "";
-            int diam = 8;
+            string orig = "Тестовый текст для шифровальной шифровки";
+            int diam = 3;
 
             string encrypted = ScitalaCipher.Encrypt(orig, diam);
             string decrypted = ScitalaCipher.Decrypt(encrypted, diam);
