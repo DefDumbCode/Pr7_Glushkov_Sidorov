@@ -15,11 +15,11 @@
         </Grid.RowDefinitions>
         
         <ComboBox x:Name="CipherType" HorizontalAlignment="Left"
-                  Width="200" Height="30" Margin="20 10"
+                  Width="200" Height="30" Margin="20 5"
                   SelectionChanged="CipherType_SelectionChanged"/>
 
         <Button x:Name="ActionBtn" Content="Шифровать" HorizontalAlignment="Right"
-                Width="150" Height="30" Margin="20 10"
+                Width="150" Height="30" Margin="20 5"
                 Click="ActionBtn_Click"/>
 
         <Grid Grid.Row="1">

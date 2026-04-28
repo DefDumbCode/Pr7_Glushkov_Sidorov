@@ -4,6 +4,7 @@ using System;
 
 namespace UnitTest
 {
+    [TestClass]
     public class ValidationModule
     {
         [TestMethod]
