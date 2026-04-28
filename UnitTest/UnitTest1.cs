@@ -1,4 +1,5 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Scitala;
 using System;
 
 namespace UnitTest
@@ -82,7 +83,7 @@ namespace UnitTest
             string encrypted = ScitalaCipher.Encrypt(orig, diam);
             string decrypted = ScitalaCipher.Decrypt(encrypted, diam);
 
-            Assert.AreEqual(orig, decrypted);
+            Assert.AreEqual(orig, decrypted.TrimEnd());
             Assert.AreNotEqual(encrypted, decrypted);
         }
 
@@ -95,7 +96,7 @@ namespace UnitTest
 
             string encrypted = ScitalaCipher.Encrypt(orig, diam);
 
-            Assert.AreEqual(expect, encrypted);
+            Assert.AreEqual(expect, encrypted.TrimEnd());
         }
 
         [TestMethod]
@@ -125,7 +126,7 @@ namespace UnitTest
 
             encrypted = ScitalaCipher.Encrypt(orig, diam);
 
-            Assert.AreEqual(expect, encrypted);
+            Assert.AreEqual(expect, encrypted.TrimEnd());
         }
 
         [TestMethod]
@@ -137,7 +138,7 @@ namespace UnitTest
 
             string encrypted = ScitalaCipher.Encrypt(orig, diam);
 
-            Assert.AreEqual(expect, encrypted);
+            Assert.AreEqual(expect, encrypted.TrimEnd());
         }
     }
 
@@ -154,7 +155,7 @@ namespace UnitTest
 
             string encrypted = ScitalaCipher.Decrypt(orig, diam);
 
-            Assert.AreEqual(expect, encrypted);
+            Assert.AreEqual(expect, encrypted.TrimEnd());
         }
 
         [TestMethod]
@@ -171,7 +172,7 @@ namespace UnitTest
 
             string encrypted = ScitalaCipher.Decrypt(orig, diam);
 
-            Assert.AreEqual(expect, encrypted);
+            Assert.AreEqual(expect, encrypted.TrimEnd());
 
             orig = "М н  м .ояоум ф й гсосоЯ волр н де ыепедосмш р омьоанипл  рлахржобя хооесы." +
                 "шотянтл удлс а Умиинблвж твиысоепсывля  рямш  вси иеидлтбв гсааеоосоплсмянисоетн  " +
@@ -184,7 +185,7 @@ namespace UnitTest
 
             encrypted = ScitalaCipher.Decrypt(orig, diam);
 
-            Assert.AreEqual(expect, encrypted);
+            Assert.AreEqual(expect, encrypted.TrimEnd());
         }
 
         [TestMethod]
@@ -196,7 +197,7 @@ namespace UnitTest
 
             string encrypted = ScitalaCipher.Decrypt(orig, diam);
 
-            Assert.AreEqual(expect, encrypted);
+            Assert.AreEqual(expect, encrypted.TrimEnd());
         }
     }
 

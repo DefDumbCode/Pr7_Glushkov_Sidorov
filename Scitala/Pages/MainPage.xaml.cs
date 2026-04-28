@@ -24,6 +24,8 @@ namespace Scitala.Pages
         public MainPage()
         {
             InitializeComponent();
+            CipherType.ItemsSource = actions;
+            CipherType.SelectedIndex = 0;
         }
 
         private void ActionBtn_Click(object sender, RoutedEventArgs e)
