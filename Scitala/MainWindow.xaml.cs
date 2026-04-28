@@ -23,6 +23,7 @@ namespace Scitala
         public MainWindow()
         {
             InitializeComponent();
+            MainFrame.Navigate(new Pages.MainPage());
         }
     }
 }
